@@ -1,16 +1,10 @@
 # SpeechBrain_Quant
 
-This repo provides different techniques for quantizing speechbrain models. Techniques the team might experiment with:
+This repo provides different techniques for quantizing SpeechBrain CRDNN and Wav2Vec2 on LibriSpeech. Quantization techniques with evaluation provided:
 
-* Quantization post fine-tuning
-* Quantization+fine-tuning at the same time (Quantization-Aware Training)
-* Stochastic quantization
-* Mixed-Precision Quantization (e.g., some layers are 8-bit, others 4-bit)
-* Static vs Dynamic quantization
-* Uniform vs Non-uniform quantization
-* Symmetric vs Asymmetric Quantization
-* Groupwise quantization
-* Simulated and Integer-only Quantization
-* Batch normalization folding for more efficient inference
-* Adaptive Quantization
-* Vector Quantization
+* Post Training Quantization
+* Mixed-precision Quantization(some layers are 8-bit, others 4-bit)
+* Quantization-aware Training
+* Stochastic Quantization
+* AdaRound
+* Batch Normalization Folding after Post Training Quantization
